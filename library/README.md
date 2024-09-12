@@ -1,3 +1,42 @@
-## Library Management System (Java, OOP)
+# Library Management System
 
-Designed and implemented a robust Library Management System using Java, leveraging Object-Oriented Programming principles for efficient code organization and scalability. The system effectively manages library resources, providing features for book cataloging, user management, and transaction tracking. Implemented a user-friendly interface for librarians to perform tasks such as adding, updating, and deleting books, as well as managing member details. Utilized OOP concepts like encapsulation, inheritance, and polymorphism to enhance code modularity and maintainability. Implemented features for book borrowing, returning, and generating reports, ensuring seamless library operations. This project demonstrates proficiency in Java programming, OOP design principles, and the ability to create practical, user-centric software solutions.
+This is a simple Library Management System built in Java using Object-Oriented Programming (OOP) principles.
+
+## Features
+- Add multiple libraries.
+- Manage books in each library.
+- Register and manage subscribers.
+- Borrow books and track their status.
+- Generate overdue reports.
+
+## Example Usage
+In the current version of the system:
+- Libraries like "Main Campus Library" and "CS Library" are created.
+- Books such as "Introduction to Java" are added to the system.
+- Subscribers named Mohamed and Ahmed are registered.
+- The system simulates borrowing books and prints overdue reports.
+
+## Classes and Methods
+
+### Main.java
+This is the main entry point of the program where the system is initialized and executed.
+
+### libraryManager.java
+- `addLibrary(library)`: Adds a library to the system.
+- `addBook(book)`: Adds a book to a library.
+- `addSubscriber(subscriber)`: Registers a new subscriber.
+- `borrowBook(bookId, subscriberId)`: Allows a subscriber to borrow a book.
+- `printOverdueReports()`: Prints overdue reports for borrowed books.
+
+### library.java
+Represents a library, containing an ID and name.
+
+### book.java
+Represents a book with details like:
+- ID, title, author, publisher, year of publication
+- Status (available or borrowed)
+
+### subscriber.java
+Represents a library subscriber with details such as:
+- ID, name, address, phone number, and email
+- Membership type (e.g., regular, golden)
